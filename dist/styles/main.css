@@ -1160,6 +1160,7 @@ textarea {
   justify-content: center;
   filter: grayscale(100%);
   padding: 0 15px;
+  transition: 0.35s;
 }
 
 .clients__slide:hover {
@@ -2364,12 +2365,11 @@ textarea {
 
 .nav {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   list-style: none;
   border-radius: 5px;
   width: 100%;
   max-height: 100%;
-  overflow-y: auto;
 }
 
 .nav__link {
@@ -2445,6 +2445,7 @@ textarea {
 }
 
 .nav__item-dropdown:hover .nav__dropdown {
+  z-index: 10;
   display: block;
 }
 
@@ -2917,6 +2918,7 @@ textarea {
 
   .nav {
     border-radius: 0;
+    overflow-y: auto;
     position: fixed;
     width: 320px;
     right: -320px;
