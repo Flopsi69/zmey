@@ -1,34 +1,345 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <main class="main main-front">
+
+    <!-- Sublimo -->
+    <section class="section sublimo">
+      <div class="container">
+        <!-- Title -->
+        <h1 class="sublimo__title section-title">Заготовки для сублимационной печати</h1>
+        <div class="sublimo__caption">напрямую от производителя</div>
+
+        <a href="" class="btn btn-blue sublimo__btn">Подробнее</a>
+
+        <div class="sublimo__banner text-right">
+          <img src="img/temp-sublimo-banner.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="services__title section-title container text-center">Наши услуги</h2>
+
+        <!-- List -->
+        <div class="services__list flex align-center text-center">
+          <!-- Item -->
+          <a href='#' class="services__item">
+            <img class="services__image" src="img/temp-services-slide.png" alt="">
+            <div class="services__caption bg-dark">Полиграфия для <br> бизнеса</div>
+          </a>
+
+          <!-- Item -->
+          <a href='#' class="services__item services__item_main">
+            <img class="services__image" src="img/temp-services-slide.png" alt="">
+            <div class="services__caption services__caption_main bg-dark">Сувениры для бизнеса</div>
+          </a>
+
+          <!-- Item -->
+          <a href='#' class="services__item">
+            <img class="services__image" src="img/temp-services-slide.png" alt="">
+            <div class="services__caption bg-dark">Товары и услуги <br> для типографий</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business -->
+    <section class="section business">
+      <div class="container">
+        <div class="business__grid">
+          <div class="business__info bg-dark bg-dark-overflow">
+            <h2 class="products__title section-title">Наши товары</h2>
+            <div class="business__descr">Ассортимент качественной продукции для любого бизнеса. <br> Мы предлагаем широкий ассортимент брендированной продукции по самым низким ценам в Украине.</div>
+            <button class="btn btn-white business__btn">Показать все товары</button>
+          </div>
+
+          <!-- Product BIG -->
+          <a href='#' class="business-product business__big-product">
+            <div class="business-product__image-big">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="business-product__title">Блокнот брендированный</div>
+            <div class="business-product__price">100 грн / шт.</div>
+          </a>
+
+          <!-- Product  -->
+          <a href='#' class="business-product">
+            <div class="business-product__image">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="business-product__title">Чашка брендированная</div>
+            <div class="business-product__price">100 грн / шт.</div>
+          </a>
+
+          <!-- Product -->
+          <a href='#' class="business-product">
+            <div class="business-product__image">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="business-product__title">Блокнот брендированный</div>
+            <div class="business-product__price">100 грн / шт.</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <div class="products">
+      <div class="container">
+        <div class="products__row flex">
+          <div class="products-sidebar bg-dark bg-dark-overflow ">
+            <h2 class="products__title section-title">Наши товары</h2>
+            <form action="" class="products__search search flex">
+              <input type="search" id='search' name="search" class="search__input input" placeholder="Название товара">
+              <button class="btn btn-blue btn-icon search__btn">
+                <svg id="search" viewBox="0 0 24 24">
+                  <title>search</title>
+                  <path d="m21.71 20.29-5.4-5.39a7.92 7.92 0 0 0 1.69-4.9 8 8 0 1 0 -8 8 7.92 7.92 0 0 0 4.9-1.69l5.39 5.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zm-17.71-10.29a6 6 0 1 1 6 6 6 6 0 0 1 -6-6z"></path>
+                </svg>
+              </button>
+            </form>
+
+            <ul class="products-nav">
+              <li><a href="#">Холсты</a></li>
+              <li><a href="#">Бумага</a></li>
+              <li class="active"><a href="#">Текстиль</a></li>
+              <li><a href="#">Самоклеящиеся</a></li>
+              <li><a href="#">Для ламинирования</a></li>
+              <li><a href="#">Рулонный скотч</a></li>
+              <li><a href="#">Основа под фотообои</a></li>
+              <li><a href="#">Магнитный винил</a></li>
+              <li><a href="#">Пленки под печать</a></li>
+              <li><a href="#">Порезка рулонных материалов</a></li>
+            </ul>
+          </div>
+
+          <div class="products-list__wrap">
+            <div class="products-list__head flex align-center">
+              <h3 class='products-list__title upper'>Текстиль</h3>
+              <button class="btn btn-black-trans products-list__btn">В магазин</button>
+            </div>
+
+            <!-- List -->
+            <div class="products-list">
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="products-card">
+                <div class="products-card__image">
+                  <img src="img/temp-product-image.png" alt="">
+                </div>
+                <div class="products-card__info text-center">
+                  <div class="products-card__title">Синтетический материал (полиэстер)110 г/м2, 610 мм х 30 м</div>
+                  <div class="products-card__price">980 грн./рулон</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Holding -->
+    <section class="section holding bg-dark text-center">
+      <div class="container">
+        <div class="holding__logo">
+          <img src="img/logo-white.png" alt="">
+        </div>
+        <div class="holding__title">Холдинговая многопрофильная компания</div>
+        <div class="holding__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+        <img class='holding__brochures' src="img/holding-brochures.png" alt="">
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="section clients">
+      <h2 class="clients__title section-title container text-center">Наши клиенты</h2>
+      <div class="clients__slider-wrap">
+        <div class="container clients__container">
+          <!-- Prev slide -->
+          <svg class="icon clients__nav clients__nav-prev">
+            <use xlink:href="#right-chevron" />
+          </svg>
+
+          <!-- Slider -->
+          <div class="clients__slider">
+            <!-- Item -->
+            <div class="clients__slide">
+              <img src="img/temp-client.png" alt="">
+            </div>
+
+            <!-- Item -->
+            <div class="clients__slide">
+              <img src="img/temp-client.png" alt="">
+            </div>
+
+            <!-- Item -->
+            <div class="clients__slide">
+              <img src="img/temp-client.png" alt="">
+            </div>
+
+            <!-- Item -->
+            <div class="clients__slide">
+              <img src="img/temp-client.png" alt="">
+            </div>
+
+            <!-- Item -->
+            <div class="clients__slide">
+              <img src="img/temp-client.png" alt="">
+            </div>
+
+            <!-- Item -->
+            <div class="clients__slide">
+              <img src="img/temp-client.png" alt="">
+            </div>
+          </div>
+
+          <!-- Next slide -->
+          <svg class="icon clients__nav clients__nav-next">
+            <use xlink:href="#right-chevron" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callback -->
+    <section class="section callback">
+      <div class="container">
+        <div class="callback__row row-flex align-end">
+          <form action="" class="callback-form bg-dark bg-dark-overflow  col">
+            <div class="callback-form__title text-center">Заказать звонок</div>
+            <input class="input callback-form__input w-100" type="text" placeholder="Введите имя">
+            <input class="input callback-form__input w-100" type="tel" placeholder="Введите номер телефона">
+            <button class="btn btn-blue callback-form__btn w-100">Перезвоните мне</button>
+          </form>
+
+          <div class="callback-ask flex align-center col">
+            <div class="callback-ask__girl">
+              <img src="img/callback-girl.png" alt="">
+            </div>
+            <div class="callback-ask__info">
+              <h2 class="callback-ask__title section-title">Остались вопросы?</h2>
+              <div class="callback-ask__descr">Заполните форму и мы свяжемся с вами. <br> Наш менеджер ответит на все ваши вопросы и предложит лучший вариант для вашей задачи.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
 </html>

@@ -9,29 +9,27 @@ gulp.task("smart-grid", (cb) => {
         filename: "_smart-grid",
         columns: 12, // number of grid columns
         offset: "1.875rem", // gutter width - 30px
-        mobileFirst: true,
+        mobileFirst: false,
         mixinNames: {
             container: "container"
         },
         container: {
+            maxWidth: "73.125rem", // 1170px
             fields: "0.9375rem" // side fields - 15px
         },
         breakPoints: {
             xs: {
-                width: "20rem" // 320px
+                width: "36rem", // 576px
             },
             sm: {
-                width: "36rem" // 576px
+                width: "48rem", // 768px
             },
             md: {
-                width: "48rem" // 768px
+                width: "62rem", //  992px
             },
             lg: {
-                width: "62rem" // 992px
+                width: "75rem", // 1200px
             },
-            xl: {
-                width: "75rem" // 1200px
-            }
         }
     });
     cb();

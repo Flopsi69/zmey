@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">Блог</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="main blog">
+    <!-- Blog intro -->
+    <section class="section blog-intro">
+      <div class="container">
+        <div class="blog-intro__row row-flex">
+          <!-- Last Article -->
+          <div class="blog-intro__last col flex">
+            <!-- Title -->
+            <h2 class="blog__title section-title section-title_mini">Последняя статья</h2>
+
+            <!-- Card -->
+            <a href="blog-post.html" class="blog-intro__last-card flex">
+              <div class="blog-intro__last-image">
+                <img src="img/temp-blog-item-last.png" alt="">
+              </div>
+              <div class="blog-intro__last-info flex">
+                <h3 class="blog-intro__last-title">Заголовок для статьи</h3>
+                <div class="blog-intro__last-date">12.03.2020</div>
+                <div class="blog-intro__last-anons">
+                  Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+                </div>
+                <div class="blog-intro__last-link flex align-center justify-end">
+                  Открыть статью
+                  <svg class="icon">
+                    <use xlink:href="#right-chevron" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Popular article -->
+          <div class="blog-intro__popular flex col">
+            <!-- Title -->
+            <h2 class="blog__title section-title section-title_mini">Самые популярные статьи</h2>
+
+            <!-- LIst -->
+            <div class="blog-intro__popular-list">
+              <!-- Item -->
+              <a href="blog-post.html" class="blog-intro__popular-item flex">
+                <div class="blog-intro__popular-image">
+                  <img src="img/temp-blog-item-last.png" alt="">
+                </div>
+                <div class="blog-intro__popular-anons">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+              </a>
+
+              <!-- Item -->
+              <a href="blog-post.html" class="blog-intro__popular-item flex">
+                <div class="blog-intro__popular-image">
+                  <img src="img/temp-blog-item-last.png" alt="">
+                </div>
+                <div class="blog-intro__popular-anons">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+              </a>
+
+              <!-- Item -->
+              <a href="blog-post.html" class="blog-intro__popular-item flex">
+                <div class="blog-intro__popular-image">
+                  <img src="img/temp-blog-item-last.png" alt="">
+                </div>
+                <div class="blog-intro__popular-anons">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog list -->
+    <section class="section blog__inner">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="blog__title section-title section-title_mini">Все статьи</h2>
+
+        <!-- List -->
+        <div class="blog__list">
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+
+          <!-- Item -->
+          <a href="blog-post.html" class="blog-card blog__item">
+            <div class="blog-card__image">
+              <img src="img/temp-blog-item.png" alt="">
+            </div>
+            <div class="blog-card__anons">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed.
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

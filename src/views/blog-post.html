@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="blog.html" class="breadcrumbs__item">Блог</a>
+        <a href="#" class="breadcrumbs__item">Название поста</a>
+      </div>
+    </div>
+  </div>
+
+  <main class='main blog'>
+    <div class="container blog__container">
+      <a href="blog.html" class="article__back flex align-center">
+        <svg class="icon article__back-icon">
+          <use xlink:href="#right-chevron" />
+        </svg>
+        Назад
+      </a>
+      <article class="article text-center">
+        <h1 class="article__title section-title">Название поста</h1>
+        <div class="article__date">12.03.2020</div>
+        <div class="article__info">
+          <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</p>
+
+          <img src="img/temp-blog-item-article.png" alt="">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus nisl nibh, et gravida velit scelerisque sed. Donec mollis finibus commodo. Vivamus auctor, lorem ac auctor venenatis, mi orci mattis massa, in maximus nulla enim ut lectus. Duis vehicula volutpat mi, at accumsan nisi vulputate eu. Pellentesque id metus varius, sagittis tortor ut, condimentum sem. Sed pellentesque pharetra orci ut malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sem massa, volutpat quis velit vitae, laoreet bibendum mauris.</p>
+          <p>Ut in tincidunt ex. Quisque scelerisque sit amet massa et molestie. Etiam interdum luctus nisl, in maximus nisl vestibulum ac. Aenean a gravida tortor. Curabitur egestas mauris ex. Mauris cursus metus ut condimentum sodales. Phasellus sagittis, lectus quis consectetur consequat, ligula nibh pretium lectus, quis finibus purus dui vitae metus. Nam feugiat tempus arcu id congue. Donec pellentesque lectus tellus, vel molestie justo blandit id. Aenean tempor felis urna, sed placerat metus aliquam non. In ac ultricies nulla, nec vulputate magna.</p>
+
+          <p>Suspendisse vitae rutrum diam, sed sollicitudin dui. Suspendisse potenti. Mauris ex risus, tristique in enim sit amet, condimentum venenatis magna. Donec sed tempor lacus. Maecenas at dignissim quam, vitae auctor mi. Vestibulum ut convallis est. Cras rhoncus sodales eros, sit amet molestie tortor tempus quis. Proin mollis, lectus non euismod cursus, nisl sapien tristique turpis, quis tempus libero arcu et leo. Vestibulum scelerisque, felis eget volutpat sodales, eros quam cursus elit, sit amet vestibulum mi diam sed massa. Ut quis nunc sed leo condimentum suscipit.</p>
+
+          <p>Donec suscipit id dolor sed accumsan. Vivamus convallis orci a congue sagittis. Aliquam tristique, dui nec fermentum commodo, nisi orci consectetur sem, ut maximus purus quam non purus. Integer accumsan, enim a consectetur interdum, purus risus egestas dolor, non consectetur mi lacus in mauris. Proin id sapien eget massa tincidunt placerat interdum at urna. Nam ac sem dui. Cras vel scelerisque dui, et rhoncus neque.</p>
+
+          <p>Nulla vel justo quis sapien varius vestibulum eu vel nulla. Fusce cursus, erat nec luctus cursus, tellus lacus mattis ante, sed eleifend nisl lacus posuere lectus. Aliquam massa orci, auctor tristique nunc id, porttitor aliquet risus. Donec lacus erat, sagittis nec faucibus quis, pellentesque vel diam. Mauris accumsan sollicitudin metus at malesuada. Etiam id urna vitae sem convallis consectetur quis eu sapien. Etiam semper enim nec lectus pellentesque venenatis. Etiam eu justo quis diam suscipit dapibus. Quisque posuere lectus lorem, quis pellentesque neque sagittis non. Nam eu eros eu felis cursus rhoncus quis sed justo. Praesent consequat interdum dignissim.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">О нас</a>
+      </div>
+    </div>
+  </div>
+
+  <main class='main about'>
+    <div class="container">
+      <section class="section holding about__holding bg-dark">
+        <h1 class="about_title section-title text-center">Бумажный Змей</h1>
+        <div class="holding__title text-center">Холдинговая многопрофильная компания</div>
+        <div class="holding__descr text-center"><strong>Компания «Бумажный Змей-ОПТ»</strong> основана в 1999 году, и сейчас это ведущий украинский производитель и дистрибьютор полиграфической продукции, принадлежностей для офиса, расходных материалов для струйной и лазерной печати, оборудования и заготовок для производства рекламно-сувенирной продукции. Мы располагаем мощной полиграфической базой, имеем оперативные склады в Киеве, развитую службу доставки.</div>
+        <div class="holding__info">
+          <strong>ООО «Бумажный Змей-Опт»</strong> - холдинговая многопрофильная компания, включающая:
+
+          <ul class="brand-list">
+            <li>Современную типографию офсетной печати.</li>
+            <li>Подразделение дистрибуции материалов для цифровой печати.</li>
+            <li>Подразделение оптовых продаж бланочной продукции и канцелярских товаров.</li>
+            <li>Подразделение рекламных технологий, оборудования и услуг.</li>
+            <li>Подразделение цифровых систем печати.</li>
+            <li>Подразделение дистрибуции самокопирующей бумаги.</li>
+            <li>Подразделение дистрибуции дизайнерского картона.</li>
+          </ul>
+        </div>
+        <img class="holding__brochures" src="img/holding-brochures.png" alt="">
+      </section>
+
+      <section class="section about-contacts text-center">
+        <!-- Head -->
+        <div class="about-contacts__head flex">
+          <div class="about-contacts__title">Киев</div>
+          <div class="about-contacts__caption">(главный офис)</div>
+          <div class="about-contacts__subtitle">ул. И. Эренбурга</div>
+        </div>
+
+        <!-- List -->
+        <div class="about-contacts__list flex flex-wrap">
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__subtitle">
+              Оборудование и заготовки для рекламы:
+            </div>
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-contacts text-center">
+        <!-- Head -->
+        <div class="about-contacts__head flex">
+          <div class="about-contacts__title">Региональные представительства</div>
+        </div>
+
+        <!-- List -->
+        <div class="about-contacts__list flex flex-wrap">
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__title">Одесса</div>
+            <div class="about-contacts__caption">Вадим</div>
+
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__title">Одесса</div>
+            <div class="about-contacts__caption">Вадим</div>
+
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="about-contacts__item">
+            <div class="about-contacts__title">Одесса</div>
+            <div class="about-contacts__caption">Вадим</div>
+
+            <div class="about-contacts__tels">
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+              <a href="tel:+380444594861" class="about-contacts__tel">+38 (044) 459-48-61</a>
+            </div>
+
+            <div class="about-contacts__mails">
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+              <a href='sales@photoboom.com.ua' class="about-contacts__mail">sales@photoboom.com.ua</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-addition">
+        <div class="about-addition__subtitle">График работы</div>
+        <p>пн-пт: с 9.00 до 18.00 <br> суббота, воскресение - выходной.</p>
+
+        <div class="about-addition__subtitle">Прием заказов в электронной форме - круглосуточно - <a href="mailto:sales@photoboom.com.ua">sales@photoboom.com.ua</a> или через корзину сайта.</div>
+
+        <div class="about-addition__subtitle">Наши сайты:</div>
+        <p>
+          Оборудование и материалы для рекламы - <a href="#">photoboom.ua</a> <br>
+          Фотобумага и материалы для широкоформатной печати - <a href="#">photoboom.kiev.ua</a> <br>
+          Полиграфические услуги типографии «Бумажный Змей» - <a href="#">zmey.com.ua</a>
+        </p>
+      </section>
+
+      <section class="section map">
+        <h1 class="about__title section-title text-center">Мы на Карте</h1>
+        <div class="map__caption text-center">Если Вы проживаете в городе Киеве то можете приехать к нам по адресу: улица Ильи Эренбурга, 3-А. <br>Ехать от метро "Вокзальная" маршруткой №10, троллейбусом №14 или автобусом №5 до остановки "Центр занятости". </div>
+
+        <div class="map__object">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780572515!2d30.252511801792018!3d50.4016990484025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1613312543692!5m2!1sru!2sua" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

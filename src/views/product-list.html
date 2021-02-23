@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">Каталог товаров</a>
+      </div>
+    </div>
+  </div>
+
+  <main class='main pl'>
+    <div class="container">
+      <div class="pl__row row-flex">
+        <!-- Sidebar -->
+        <div class="pl__sidebar sidebar col">
+          <!-- Cats -->
+          <div class="sidebar-cats">
+            <!-- Toggler -->
+            <button class="btn btn-blue sidebar-cats__toggler w-100 flex">
+              <div class="sidebar-cats__toggler-burger">
+                <svg class="icon icon-white">
+                  <use xlink:href="#menu" />
+                </svg>
+              </div>
+              <div class="sidebar-cats__toggler-caption">Все категории</div>
+            </button>
+            <!-- Nav -->
+            <div class="sidebar-cats__nav">
+              <div class="sidebar-cats__nav-item active">
+                <a href="#" class="sidebar-cats__nav-link" href="">Кружки</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Одежда</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Тарелки</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Печать на металле</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Новогодние украшения</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Пазлы</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Сувениры</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Фотокамни, Фоторамки</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Магниты</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Коврики для мыши</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Шкатулки</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Продукция из дерева</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Заколки для волос</a>
+              </div>
+              <div class="sidebar-cats__nav-item">
+                <a href="#" class="sidebar-cats__nav-link" href="">Подушки</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter -->
+          <div class="sidebar-filter">
+            <div class="sidebar-filter__title">Фильтр</div>
+
+            <hr class="sidebar-filter__divider">
+            </hr>
+
+            <!-- Active filters -->
+            <div class="sidebar-filter__active">
+              <a href="#" class="sidebar-filter__active-item">
+                <svg class="icon icon-white">
+                  <use xlink:href="#cancel" />
+                </svg>
+                Цвет: Белый
+              </a>
+
+              <a href='#' class="sidebar-filter__active-item">
+                <svg class="icon icon-white">
+                  <use xlink:href="#cancel" />
+                </svg>
+                Бренд: Apple
+              </a>
+            </div>
+
+            <hr class="sidebar-filter__divider">
+            </hr>
+
+            <!-- Price -->
+            <div class="sidebar-filter__block sidebar-filter__price">
+              <div class="sidebar-filter__block-title">Цена</div>
+
+              <div class="sidebar-filter__price-inner flex align-center">
+                <input type="text" class="input sidebar-filter__price-input" placeholder="От">
+                <div class="sidebar-filter__price-divider">—-</div>
+                <input type="text" class="input sidebar-filter__price-input" placeholder="До">
+              </div>
+            </div>
+
+            <hr class="sidebar-filter__divider">
+            </hr>
+
+            <!-- Color -->
+            <div class="sidebar-filter__block sidebar-filter__color">
+              <div class="sidebar-filter__block-title">Цвет</div>
+
+              <div class="sidebar-filter__color-inner">
+                <div class="checkbox sidebar-filter__color-item">
+                  <input class='checkbox__input' type="checkbox" id="filter-checkbox1" name="filter-checkbox1" value="yes">
+                  <label class='checkbox__label label' for="filter-checkbox1">Белый</label>
+                </div>
+
+                <div class="checkbox sidebar-filter__color-item">
+                  <input class='checkbox__input' type="checkbox" id="filter-checkbox2" name="filter-checkbox2" value="yes">
+                  <label class='checkbox__label label' for="filter-checkbox2">Чёрный</label>
+                </div>
+
+                <div class="checkbox sidebar-filter__color-item">
+                  <input class='checkbox__input' type="checkbox" id="filter-checkbox3" name="filter-checkbox3" value="yes">
+                  <label class='checkbox__label label' for="filter-checkbox3">Синий</label>
+                </div>
+
+                <div class="checkbox sidebar-filter__color-item">
+                  <input class='checkbox__input' type="checkbox" id="filter-checkbox4" name="filter-checkbox4" value="yes">
+                  <label class='checkbox__label label' for="filter-checkbox4">Красный</label>
+                </div>
+
+                <div class="checkbox sidebar-filter__color-item">
+                  <input class='checkbox__input' type="checkbox" id="filter-checkbox5" name="filter-checkbox5" value="yes">
+                  <label class='checkbox__label label' for="filter-checkbox5">Желтый</label>
+                </div>
+
+                <div class="checkbox sidebar-filter__color-item">
+                  <input class='checkbox__input' type="checkbox" id="filter-checkbox6" name="filter-checkbox6" value="yes">
+                  <label class='checkbox__label label' for="filter-checkbox6">Фиолетовый</label>
+                </div>
+              </div>
+            </div>
+
+            <hr class="sidebar-filter__divider">
+
+            <!-- Brand -->
+            <div class="sidebar-filter__block sidebar-filter__brand">
+              <div class="sidebar-filter__block-title">Бренд</div>
+
+              <div class="sidebar-filter__brand-inner">
+                <a href='#' class="sidebar-filter__brand-item active">
+                  Apple
+                </a>
+                <a href='#' class="sidebar-filter__brand-item">
+                  Apple
+                </a>
+                <a href='#' class="sidebar-filter__brand-item">
+                  Apple
+                </a>
+                <a href='#' class="sidebar-filter__brand-item">
+                  Apple
+                </a>
+              </div>
+            </div>
+
+            <hr class="sidebar-filter__divider">
+          </div>
+
+        </div>
+
+        <!-- Banner slider -->
+        <div class="pl__content col">
+          <div class="pl-banner">
+            <div class="pl-banner__slide">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="pl-banner__slide">
+              <img src="img/holding-brochures.png" alt="">
+            </div>
+            <div class="pl-banner__slide">
+              <img src="img/temp-blog-item-article.png" alt="">
+            </div>
+            <div class="pl-banner__slide">
+              <img src="img/holding-brochures.png" alt="">
+            </div>
+          </div>
+
+          <div class="pl-head row-flex justify-between align-center">
+            <div class="pl-head__info flex align-center col">
+              <h1 class="pl-head__title section-title">Кружки</h1>
+              <div class="pl-head__count pl-head__caption">Найдено 8 товаров</div>
+            </div>
+            <div class="pl-head__filter flex align-center col">
+              <div class="pl-head__caption pl-head__caption-filter">Сортировать по:</div>
+              <div class="select" style="width:200px;">
+                <select class="select__original">
+                  <option value="0">Choose</option>
+                  <option value="1">По популярности</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- List -->
+          <div class="pl__list">
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+
+            <!-- Item -->
+            <a href='product.html' class="pl-card pl__list-item">
+              <div class="pl-card__image">
+                <img src="img/temp-product.png" alt="">
+              </div>
+              <div class="pl-card__title">Блокнот брендированный</div>
+              <div class="pl-card__price">100 грн / шт.</div>
+            </a>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination pl__pagination flex justify-center">
+            Тут будет пагинация WP [1, 2, 3 ...]
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="product-list.html" class="breadcrumbs__item">Каталог товаров</a>
+        <a href="#" class="breadcrumbs__item">Чашка брендированная</a>
+      </div>
+    </div>
+  </div>
+
+  <main class='main pdp'>
+    <section class='pdp'>
+      <div class="container">
+        <div class="pdp__row row-flex">
+          <!-- Gallery -->
+          <div class="pdp__gallery-wrap pdp__col col">
+            <div class="pdp__gallery-for">
+              <div class='pdp__gallery-for-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-for-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-for-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-for-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-for-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+            </div>
+            <div class="pdp__gallery-nav">
+              <div class='pdp__gallery-nav-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-nav-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-nav-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-nav-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+              <div class='pdp__gallery-nav-item'>
+                <img src="img/temp-pdp-product.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- Info -->
+          <div class="pdp__info pdp__col col">
+            <h1 class="pdp__title section-title">Чашка брендированная</h1>
+            <div class="pdp__code">Код: GRW04.12.002/LCH</div>
+            <div class="pdp__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </div>
+
+            <!-- Stock -->
+            <div class="pdp__stock flex align-center">
+              <!-- "stock-in" || "stock-out" -->
+              <svg class="icon stock-in">
+                <!-- "Done" || "Cancel" -->
+                <use xlink:href="#done" />
+              </svg>
+              В наличии
+            </div>
+
+            <!-- Options -->
+            <div class="pdp__options">
+              <div class="pdp__option">
+                <div class="pdp__option-caption">Цвет</div>
+                <div class="select" style="width:200px;">
+                  <select class="select__original">
+                    <option value="0">Choose</option>
+                    <option value="1">Черный Черный Черный Черный Черный Черный</option>
+                    <option value="2">Черный</option>
+                    <option value="3">Черный</option>
+                    <option value="4">Черный</option>
+                    <option value="5">Черный</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="pdp__option">
+                <div class="pdp__option-caption">Кол-во</div>
+                <div class="quantity flex">
+                  <button class="btn quantity__btn quantity__minus">-</button>
+                  <input type="text" class="input quantity__input" disabled value='1'>
+                  <button class="btn quantity__btn quantity__plus">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="pdp__price">100 грн.</div>
+
+            <!-- Buy -->
+            <button class="btn btn-blue pdp__buy">
+              <svg class="icon icon-btn">
+                <use xlink:href="#shopping-cart"></use>
+              </svg>
+              В корзину
+            </button>
+
+            <!-- Advantages -->
+            <div class="pdp__advantages">
+              <div class="pdp__advantages-item">
+                <svg class="icon">
+                  <use xlink:href="#shield" />
+                </svg>
+                Безопасная оплата
+              </div>
+              <div class="pdp__advantages-item">
+                <svg class="icon">
+                  <use xlink:href="#truck" />
+                </svg>
+                Быстрая доставка
+              </div>
+              <div class="pdp__advantages-item">
+                <svg class="icon">
+                  <use xlink:href="#undo" />
+                </svg>
+                Гарантия возврата или обмена
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pdp__tabs">
+          <div class="pdp__tabs-head flex align-center">
+            <div class="pdp__tabs-toggler active">Описание</div>
+            <div class="pdp__tabs-toggler">Характеристики</div>
+          </div>
+          <div class="pdp__tabs-body">
+            <div class="pdp__tab active">
+              <p>
+                <strong>Печать на чашке керамической</strong> с использованием <a href='#'>технологии Гравертон (Grawerton)</a>. На чашку можно нанести любое изображение, надпись или логотип.
+              </p>
+              <p>
+                Печать на чашках - это эксклюзивный и оригинальный подарок, а также популярный и универсальный вид рекламно-сувенирной продукции.
+              </p>
+              <p>
+                Вы можете предоставить нам любое изображение, фотографию, надпись или логотип и наши дизайнеры обработают его и создадут эксклюзивный дизайн на ваше усмотрение. Отправить эскиз изображения можно по электронному адресу <a href='#'>k@mug.com.ua.</a>
+              </p>
+              <p>
+                <strong>Обработка макета оплачивается отдельно. Стоимость зависит от сложности макета.</strong> <br>
+                Цена указана уже с печатью
+              </p>
+            </div>
+            <div class="pdp__tab">
+              <table border='1'>
+                <tbody>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit!</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit!</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit!</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                  </tr>
+
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reprehenderit!</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="similar">
+      <div class="container">
+        <!-- Title -->
+        <h2 class="blog__title section-title section-title_mini">Подобные товары</h2>
+
+        <!-- List -->
+        <div class="pl__list similar__list">
+          <!-- Item -->
+          <a href='product.html' class="pl-card pl__list-item">
+            <div class="pl-card__image">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="pl-card__title">Блокнот брендированный</div>
+            <div class="pl-card__price">100 грн / шт.</div>
+          </a>
+
+          <!-- Item -->
+          <a href='product.html' class="pl-card pl__list-item">
+            <div class="pl-card__image">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="pl-card__title">Блокнот брендированный</div>
+            <div class="pl-card__price">100 грн / шт.</div>
+          </a>
+
+          <!-- Item -->
+          <a href='product.html' class="pl-card pl__list-item">
+            <div class="pl-card__image">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="pl-card__title">Блокнот брендированный</div>
+            <div class="pl-card__price">100 грн / шт.</div>
+          </a>
+
+          <!-- Item -->
+          <a href='product.html' class="pl-card pl__list-item">
+            <div class="pl-card__image">
+              <img src="img/temp-product.png" alt="">
+            </div>
+            <div class="pl-card__title">Блокнот брендированный</div>
+            <div class="pl-card__price">100 грн / шт.</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>
