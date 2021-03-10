@@ -1553,7 +1553,7 @@ textarea {
 .select__value:after {
   position: absolute;
   content: '';
-  top: 15px;
+  top: 45%;
   right: 10px;
   width: 0;
   height: 0;
@@ -1563,7 +1563,7 @@ textarea {
 
 .select__value_active:after {
   border-color: transparent transparent #2a3744 transparent;
-  top: 7px;
+  top: 30%;
 }
 
 .select__items {
@@ -1751,7 +1751,6 @@ textarea {
 
 .pl__sidebar {
   width: calc(25% - 1.875rem);
-  margin-top: 80px;
 }
 
 .pl__content {
@@ -2226,6 +2225,275 @@ textarea {
 
 .similar__list {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.contacts-section + .contacts-section {
+  margin-top: 60px;
+}
+
+.contacts-place__caption {
+  margin-top: 14px;
+  line-height: 1.4;
+}
+
+.contacts-place__map {
+  margin-top: 20px;
+}
+
+.contacts__table-wrap {
+  margin-top: 35px;
+}
+
+.contacts__table-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.contacts__row {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.contacts__row + .contacts__row {
+  margin-top: 13px;
+}
+
+.contacts__row-key {
+  width: 370px;
+  flex-shrink: 0;
+}
+
+.contacts__row-body {
+  flex-grow: 1;
+  margin-left: 18px;
+}
+
+.contacts__row-value + .contacts__row-value {
+  margin-top: 7px;
+}
+
+.contacts__row-item {
+  background: #f2f2f2;
+  padding: 10px 15px;
+}
+
+.contacts__modals {
+  margin-top: 18px;
+}
+
+.contacts__modals-btn {
+  padding: 15px 45px;
+  margin-right: 15px;
+}
+
+.cart__form {
+  width: 35%;
+  padding: 35px 25px 70px;
+}
+
+.cart__form-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.cart__form-input {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+  height: 45px;
+  padding: 10px 18px;
+  margin-top: 12px;
+}
+
+.cart__form-select {
+  margin-top: 12px;
+  color: #2a3744;
+}
+
+.cart__form-select .select__value {
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+
+.cart__form-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart__form-btn {
+  padding: 14px 15px;
+  margin-top: 32px;
+}
+
+.cart__form-group + .cart__form-group {
+  margin-top: 30px;
+}
+
+.cart__title {
+  margin-right: 10px;
+}
+
+.cart__count {
+  color: #a6aeb5;
+}
+
+.cart__list {
+  margin-top: 15px;
+}
+
+.cart__list-wrap {
+  width: 65%;
+  padding-right: 30px;
+}
+
+.cart__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 7px 10px;
+}
+
+.cart__item + .cart__item {
+  margin-top: 10px;
+}
+
+.cart__item-end {
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.cart__item-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.cart__item-close:hover {
+  border-color: red;
+}
+
+.cart__item-close:hover svg {
+  fill: red;
+}
+
+.cart__item-close svg {
+  width: 13px;
+  height: 13px;
+  transition: 0.35s;
+}
+
+.cart__item-image {
+  width: 110px;
+  height: 85px;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+
+.cart__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart__item-info {
+  flex: 1;
+}
+
+.cart__item-title {
+  position: relative;
+}
+
+.cart__item-title:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  margin-left: 8px;
+  display: inline-block;
+  transform: rotate(-45deg) translateY(-2px);
+  border-right: 2px solid #2a3744;
+  border-bottom: 2px solid #2a3744;
+}
+
+.cart__item-title:hover {
+  color: #1564b1;
+}
+
+.cart__item-option {
+  color: rgba(42, 55, 68, 0.6);
+  font-size: 14px;
+  margin: 7px 0;
+}
+
+.cart__item-price {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cart__summary {
+  margin-top: 30px;
+}
+
+.cart__summary-caption {
+  font-weight: 700;
+  font-size: 14px;
+  color: #a6aeb5;
+}
+
+.cart__summary-value {
+  font-weight: 700;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.calc__nav {
+  width: calc(25% - 1.875rem);
+}
+
+.calc__nav-item {
+  background-color: #fbfbfb;
+  display: flex;
+  padding: 17px 20px;
+  color: rgba(42, 55, 68, 0.25);
+}
+
+.calc__nav-item.active {
+  color: #fff;
+  background-color: #2a3744;
+}
+
+.calc__nav-icon {
+  margin-right: 14px;
+}
+
+.calc__nav-icon svg {
+  width: 35px;
+  height: 35px;
+  fill: rgba(42, 55, 68, 0.25);
+}
+
+.active .calc__nav-icon svg {
+  fill: #fff;
+}
+
+.calc__nav-step {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.active .calc__nav-descr {
+  color: #b1bac2;
 }
 
 .header {
@@ -2823,6 +3091,10 @@ textarea {
     width: calc(100% - 1.875rem);
   }
 
+  .pl__sidebar {
+    margin-top: 80px;
+  }
+
   .pl__content {
     width: calc(100% - 1.875rem);
   }
@@ -2837,6 +3109,28 @@ textarea {
 
   .pdp__tab {
     font-size: 14px;
+  }
+
+  .contacts__title br {
+    display: none;
+  }
+
+  .contacts__row-key {
+    width: 270px;
+  }
+
+  .cart__row {
+    flex-wrap: wrap;
+  }
+
+  .cart__form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .cart__list-wrap {
+    width: 100%;
+    padding-right: 0px;
   }
 
   .header {
@@ -3113,6 +3407,74 @@ textarea {
     width: calc(100% - 1.875rem);
   }
 
+  .contacts-place__caption {
+    font-size: 14px;
+  }
+
+  .contacts__table-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contacts__row {
+    display: block;
+  }
+
+  .contacts__row-key {
+    width: 100%;
+    background: #57636f;
+    color: #fff;
+  }
+
+  .contacts__row-body {
+    margin-left: 0;
+  }
+
+  .contacts__row-value {
+    font-size: 14px;
+  }
+
+  .contacts__modals-btn {
+    margin-top: 15px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .cart__form-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .cart__item {
+    flex-wrap: wrap;
+    padding-right: 30px;
+  }
+
+  .cart__item-quantity {
+    justify-content: flex-end;
+    margin-right: -30px;
+    margin-top: -20px;
+  }
+
+  .cart__item-end {
+    width: 100%;
+  }
+
+  .cart__item-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .cart__item-image {
+    width: 80px;
+    margin-right: 12px;
+  }
+
+  .cart__item-title {
+    font-size: 13px;
+  }
+
   .footer__design {
     padding: 10px 0;
   }
@@ -3311,6 +3673,10 @@ textarea {
 
   .pdp__tabs-toggler {
     font-size: 14px;
+  }
+
+  .cart__form {
+    padding: 25px 18px 30px;
   }
 
   .header-top__tel {

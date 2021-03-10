@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">Контакты</a>
+      </div>
+    </div>
+  </div>
+
+  <main class='main contacts'>
+    <section class='section contacts-place contacts-section'>
+      <div class="container">
+        <!-- Section Title -->
+        <h2 class="contacts__title section-title text-center">Местоположение компании</h2>
+
+        <div class="contacts-place__caption text-center">Если Вы проживаете в городе Киеве то можете приехать к нам по адресу: улица Ильи Эренбурга, 3&nbsp;-&nbsp;А. <br> Ехать от метро "Вокзальная" маршруткой №10, троллейбусом №14 или автобусом №5 до остановки "Центр занятости". </div>
+
+        <div class="contacts-place__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780572515!2d30.252511801792018!3d50.4016990484025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1613312543692!5m2!1sru!2sua" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <section class='section contacts-section'>
+      <div class="container">
+        <!-- Section Title -->
+        <h2 class="contacts__title section-title text-center">Контактная информация компании <br> ООО «бумажный змей - опт»</h2>
+
+        <!-- Table wrap -->
+        <div class="contacts__table-wrap">
+          <!-- Table -->
+          <div class="contacts__table">
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Название</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  ООО «Бумажный Змей - ОПТ»
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Адрес</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Украина, Киев, ул. И. Эренбурга, 3а
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Телефоны</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (067) 487-58-80 — Дизайнерский Картон, Самокоп.бумага
+                </div>
+
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (099) 003-73-99 — Материалы для фотопечати
+                </div>
+
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (097) 794-05-55 — Все для Сублимации и Термотрансфера
+                </div>
+
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (067) 401-34-97 — Рекламно-Сувенирная продукция
+                </div>
+
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (050) 677-74-07 — Широкоформатные материалы
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Сайт компании</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  www.zmey.ua
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Email</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  sales@photoboom.com.ua
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Skype</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  boom-vl
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Тип компании</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Производитель
+                </div>
+                <div class="contacts__row-value contacts__row-item">
+                  Торговая компания
+                </div>
+                <div class="contacts__row-value contacts__row-item">
+                  Компания, предоставляющая услуги
+                </div>
+                <div class="contacts__row-value contacts__row-item">
+                  Дистрибьютор / Реселлер
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Бренды</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  PhotoBOOM, Lomond, Avery
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Кол-во сотрудников</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  101-500 человек
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Год основания</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  1999
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Организационно-правовая форма</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Частное предприятие
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Основные клиенты</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Полиграфии, Фотоателье, Дизайнеры, Рекламно-сувенирный бизнес,
+                  Изготовление оригинальных подарков, Частные лица
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Основные клиенты</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Полиграфии, Фотоателье, Дизайнеры, Рекламно-сувенирный бизнес,
+                  Изготовление оригинальных подарков, Частные лица
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Размеры производственных прощадей</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  5000-25000 кв.м.
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Местонахождение производства</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  ул. И. Эренбурга 3-А
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Контроль качества</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Внешний и внутренний
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Кол-во производственных линий</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  8
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modals buttons -->
+        <div class="contacts__modals">
+          <button class="btn btn-blue contacts__modals-btn">Написать нам</button>
+          <button class="btn btn-blue contacts__modals-btn">Запрос партнерских цен</button>
+        </div>
+      </div>
+    </section>
+
+    <section class='section contacts-place contacts-section'>
+      <div class="container">
+        <!-- Section Title -->
+        <h2 class="contacts__title section-title text-center">Филиалы и представительства</h2>
+
+        <!-- Table wrap -->
+        <div class="contacts__table-wrap">
+          <!-- Table title -->
+          <h3 class='contacts__table-title'>Региональный представитель в Харьковской области</h3>
+
+          <!-- Table -->
+          <div class="contacts__table">
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Адрес</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Украина, Харьковская область, Харьков, ул. Маршала Бажанова, 21/23
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Телефон</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (099) 751-31-58 — Виктория
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Email</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  vika.barbaris@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table wrap -->
+        <div class="contacts__table-wrap">
+          <!-- Table title -->
+          <h3 class='contacts__table-title'>Региональный представитель в Днепропетровской области</h3>
+
+          <!-- Table -->
+          <div class="contacts__table">
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Адрес</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  Украина, Днепропетровская область, Днепр, Центральная улица, 1
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Телефон</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  +38 (067) 469-86-63 — Егор
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts Row  -->
+            <div class="contacts__row">
+              <div class="contacts__row-key contacts__row-item">Email</div>
+              <div class="contacts__row-body">
+                <div class="contacts__row-value contacts__row-item">
+                  fesenko@photoboom.com.ua
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>

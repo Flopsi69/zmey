@@ -1254,7 +1254,7 @@ textarea {
     &:after {
       position: absolute;
       content: '';
-      top: 15px;
+      top: 45%;
       right: 10px;
       width: 0;
       height: 0;
@@ -1263,7 +1263,7 @@ textarea {
     }
     &_active:after {
       border-color: transparent transparent $dark transparent;
-      top: 7px;
+      top: 30%;
     }
   }
   &__items {
@@ -1452,7 +1452,9 @@ textarea {
     @include size(3);
     @include size-lg(4);
     @include size-md(12);
-    margin-top: 80px;
+    @include md-block {
+      margin-top: 80px;
+    }
   }
   &__content {
     @include size(9);
@@ -1958,5 +1960,329 @@ textarea {
   margin-top: 60px;
   &__list {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.contacts {
+  &-section {
+    & + & {
+      margin-top: 60px;
+    }
+  }
+  &__title {
+    @include md-block {
+      br {
+        display: none;
+      }
+    }
+  }
+  &-place {
+    &__caption {
+      margin-top: 14px;
+      line-height: 1.4;
+      @include sm-block {
+        font-size: 14px;
+      }
+    }
+    &__map {
+      margin-top: 20px;
+    }
+  }
+  &__table {
+    // margin-top: 30px;
+    &-wrap {
+      margin-top: 35px;
+    }
+    &-title {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+      @include sm-block {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    @include sm-block {
+      display: block;
+    }
+    & + & {
+      margin-top: 13px;
+    }
+    &-key {
+      width: 370px;
+      flex-shrink: 0;
+      @include md-block {
+        width: 270px;
+      }
+      @include sm-block {
+        width: 100%;
+        background: #57636f;
+        color: #fff;
+      }
+    }
+    &-body {
+      flex-grow: 1;
+      margin-left: 18px;
+      @include sm-block {
+        margin-left: 0;
+      }
+    }
+    &-value {
+      @include sm-block {
+        font-size: 14px;
+      }
+      & + & {
+        margin-top: 7px;
+      }
+    }
+    &-item {
+      background: $gray;
+      padding: 10px 15px;
+    }
+  }
+  &__modals {
+    margin-top: 18px;
+    &-btn {
+      padding: 15px 45px;
+      margin-right: 15px;
+      @include sm-block {
+        margin-top: 15px;
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.cart {
+  &__row {
+    @include md-block {
+      flex-wrap: wrap;
+    }
+  }
+  &__form {
+    width: 35%;
+    padding: 35px 25px 70px;
+    @include md-block {
+      width: 100%;
+      margin-top: 40px;
+    }
+    @include xs-block {
+      padding: 25px 18px 30px;
+    }
+    &-title {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+      @include sm-block {
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+    }
+    &-input {
+      border-radius: 5px;
+      border: 1px solid #d9d9d9;
+      background-color: #fbfbfb;
+      height: 45px;
+      padding: 10px 18px;
+      margin-top: 12px;
+    }
+    &-select {
+      margin-top: 12px;
+      color: $dark;
+      .select__value {
+        padding-top: 12px;
+        padding-bottom: 13px;
+      }
+    }
+    &-subtitle {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-btn {
+      padding: 14px 15px;
+      margin-top: 32px;
+    }
+    &-group {
+      & + & {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__title {
+    margin-right: 10px;
+  }
+  &__count {
+    color: #a6aeb5;
+  }
+  &__list {
+    margin-top: 15px;
+    &-wrap {
+      width: 65%;
+      padding-right: 30px;
+      @include md-block {
+        width: 100%;
+        padding-right: 0px;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $gray;
+    padding: 7px 10px;
+    @include sm-block {
+      flex-wrap: wrap;
+      padding-right: 30px;
+    }
+    &-quantity {
+      @include sm-block {
+        justify-content: flex-end;
+        margin-right: -30px;
+        margin-top: -20px;
+      }
+    }
+    & + & {
+      margin-top: 10px;
+    }
+    &-end {
+      width: 130px;
+      flex-shrink: 0;
+      @include sm-block {
+        width: 100%;
+      }
+    }
+    &-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border: 1px solid transparent;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      @include sm-block {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      &:hover {
+        border-color: red;
+        svg {
+          fill: red;
+        }
+      }
+      svg {
+        width: 13px;
+        height: 13px;
+        transition: 0.35s;
+      }
+    }
+    &-image {
+      width: 110px;
+      height: 85px;
+      margin-right: 18px;
+      flex-shrink: 0;
+      @include sm-block {
+        width: 80px;
+        margin-right: 12px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-info {
+      flex: 1;
+    }
+    &-title {
+      position: relative;
+      @include sm-block {
+        font-size: 13px;
+      }
+      &:after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        margin-left: 8px;
+        display: inline-block;
+        transform: rotate(-45deg) translateY(-2px);
+        border-right: 2px solid #2a3744;
+        border-bottom: 2px solid #2a3744;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+    &-option {
+      color: rgba($dark, 0.6);
+      font-size: 14px;
+      margin: 7px 0;
+    }
+    &-price {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+  &__summary {
+    margin-top: 30px;
+    &-caption {
+      font-weight: 700;
+      font-size: 14px;
+      color: #a6aeb5;
+    }
+    &-value {
+      font-weight: 700;
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.calc {
+  &__nav {
+    @include size(3);
+    &-item {
+      background-color: #fbfbfb;
+      display: flex;
+      padding: 17px 20px;
+      color: rgba($dark, 0.25);
+      &.active {
+        color: #fff;
+        background-color: $dark;
+      }
+    }
+    &-icon {
+      margin-right: 14px;
+      svg {
+        width: 35px;
+        height: 35px;
+        fill: rgba($dark, 0.25);
+        .active & {
+          fill: #fff;
+        }
+      }
+    }
+    &-info {
+    }
+    &-step {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    &-descr {
+      .active & {
+        color: #b1bac2;
+      }
+    }
   }
 }

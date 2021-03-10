@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  @@include("../blocks/modules/header/header.html")
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner flex">
+        <a href="/" class="breadcrumbs__item">Главная</a>
+        <a href="#" class="breadcrumbs__item">Калькулятор услуг</a>
+      </div>
+    </div>
+  </div>
+
+  <main class='main calc'>
+    <div class="container">
+      <!-- Title -->
+      <h1 class="calc__title section-title">Калькулятор листовой печати</h1>
+
+      <!-- Inner -->
+      <div class="calc__inner row-flex">
+        <!-- Navigation -->
+        <div class="calc__nav col">
+          <!-- Nav item -->
+          <div class="calc__nav-item active">
+            <div class="calc__nav-icon">
+              <svg class="icon">
+                <use xlink:href="#maximize" />
+              </svg>
+            </div>
+            <div class="calc__nav-info">
+              <div class="calc__nav-step">Шаг 1</div>
+              <div class="calc__nav-descr">Размеры и макет</div>
+            </div>
+          </div>
+
+          <!-- Nav item -->
+          <div class="calc__nav-item">
+            <div class="calc__nav-icon">
+              <svg class="icon">
+                <use xlink:href="#paper-roll" />
+              </svg>
+            </div>
+            <div class="calc__nav-info">
+              <div class="calc__nav-step">Шаг 2</div>
+              <div class="calc__nav-descr">Бумага</div>
+            </div>
+          </div>
+
+          <!-- Nav item -->
+          <div class="calc__nav-item">
+            <div class="calc__nav-icon">
+              <svg class="icon">
+                <use xlink:href="#paper-stationery-with-silhouette" />
+              </svg>
+            </div>
+            <div class="calc__nav-info">
+              <div class="calc__nav-step">Шаг 3</div>
+              <div class="calc__nav-descr">Покрытие</div>
+            </div>
+          </div>
+
+          <!-- Nav item -->
+          <div class="calc__nav-item">
+            <div class="calc__nav-icon">
+              <svg class="icon">
+                <use xlink:href="#square-root" />
+              </svg>
+            </div>
+            <div class="calc__nav-info">
+              <div class="calc__nav-step">Шаг 4</div>
+              <div class="calc__nav-descr">Формула печати</div>
+            </div>
+          </div>
+
+          <!-- Nav item -->
+          <div class="calc__nav-item">
+            <div class="calc__nav-icon">
+              <svg class="icon">
+                <use xlink:href="#plus" />
+              </svg>
+            </div>
+            <div class="calc__nav-info">
+              <div class="calc__nav-step">Шаг 5</div>
+              <div class="calc__nav-descr">Доп. опции</div>
+            </div>
+          </div>
+
+          <!-- Nav item -->
+          <div class="calc__nav-item">
+            <div class="calc__nav-icon">
+              <svg class="icon">
+                <use xlink:href="#rolling-machine" />
+              </svg>
+            </div>
+            <div class="calc__nav-info">
+              <div class="calc__nav-step">Шаг 6</div>
+              <div class="calc__nav-descr">Результат</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="calc__info col">
+          <!-- Step -->
+          <div class="calc__step">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
+</html>
