@@ -44,7 +44,7 @@
   <main class='main calc'>
     <div class="container">
       <!-- Title -->
-      <h1 class="calc__title section-title">Калькулятор листовой печати</h1>
+      <h1 class="calc__title section-title text-center">Калькулятор листовой печати</h1>
 
       <!-- Inner -->
       <div class="calc__inner row-flex">
@@ -58,7 +58,12 @@
               </svg>
             </div>
             <div class="calc__nav-info">
-              <div class="calc__nav-step">Шаг 1</div>
+              <div class="calc__nav-step">
+                Шаг 1
+                <svg class="icon">
+                  <use xlink:href="#right-chevron" />
+                </svg>
+              </div>
               <div class="calc__nav-descr">Размеры и макет</div>
             </div>
           </div>
@@ -71,7 +76,12 @@
               </svg>
             </div>
             <div class="calc__nav-info">
-              <div class="calc__nav-step">Шаг 2</div>
+              <div class="calc__nav-step">
+                Шаг 2
+                <svg class="icon">
+                  <use xlink:href="#right-chevron" />
+                </svg>
+              </div>
               <div class="calc__nav-descr">Бумага</div>
             </div>
           </div>
@@ -84,7 +94,12 @@
               </svg>
             </div>
             <div class="calc__nav-info">
-              <div class="calc__nav-step">Шаг 3</div>
+              <div class="calc__nav-step">
+                Шаг 3
+                <svg class="icon">
+                  <use xlink:href="#right-chevron" />
+                </svg>
+              </div>
               <div class="calc__nav-descr">Покрытие</div>
             </div>
           </div>
@@ -97,7 +112,12 @@
               </svg>
             </div>
             <div class="calc__nav-info">
-              <div class="calc__nav-step">Шаг 4</div>
+              <div class="calc__nav-step">
+                Шаг 4
+                <svg class="icon">
+                  <use xlink:href="#right-chevron" />
+                </svg>
+              </div>
               <div class="calc__nav-descr">Формула печати</div>
             </div>
           </div>
@@ -110,7 +130,12 @@
               </svg>
             </div>
             <div class="calc__nav-info">
-              <div class="calc__nav-step">Шаг 5</div>
+              <div class="calc__nav-step">
+                Шаг 5
+                <svg class="icon">
+                  <use xlink:href="#right-chevron" />
+                </svg>
+              </div>
               <div class="calc__nav-descr">Доп. опции</div>
             </div>
           </div>
@@ -123,7 +148,12 @@
               </svg>
             </div>
             <div class="calc__nav-info">
-              <div class="calc__nav-step">Шаг 6</div>
+              <div class="calc__nav-step">
+                Шаг 6
+                <svg class="icon">
+                  <use xlink:href="#right-chevron" />
+                </svg>
+              </div>
               <div class="calc__nav-descr">Результат</div>
             </div>
           </div>
@@ -132,8 +162,324 @@
         <!-- Info -->
         <div class="calc__info col">
           <!-- Step -->
-          <div class="calc__step">
+          <div class="calc__step calc-one">
+            <div class="calc-text">Выберите размер макета из списка или укажите свои значения и загрузите файл макета.</div>
 
+            <div class="calc-one__body calc-body flex">
+              <div class="calc-one__placeholder">
+                <img src="img/calc-one-placeholder.png" alt="">
+              </div>
+
+              <div class="calc-one__options">
+                <div class="calc-group">
+                  <label class="calc-label">Размер (шаблон)</label>
+                  <div class="select calc-select__size">
+                    <select class="select__original text-center">
+                      <option value="0">90 х 50 (Визитка)</option>
+                      <option value="1">По популярности</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                      <option value="4">Option 4</option>
+                      <option value="5">Option 5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="calc-group">
+                  <div class="calc-label">Свой размер</div>
+
+                  <div class="calc-input__size-wrap flex align-center">
+                    <div class="calc-input__size-inner">
+                      <label for="" class="calc-label">Ширина:</label>
+                      <input class='input input_gray calc-input__size' type="text" placeholder="1">
+                    </div>
+                    <div class="calc-input__size-divider">x</div>
+                    <div class="calc-input__size-inner">
+                      <label for="" class="calc-label">Высота:</label>
+                      <input class='input input_gray calc-input__size' type="text" placeholder="1">
+                    </div>
+                  </div>
+                </div>
+
+                <button class="calc-one__btn btn btn-blue w-100 calc-group">
+                  <svg class="icon icon-btn">
+                    <use xlink:href="#picture"></use>
+                  </svg>
+                  Загрузить изображение
+                </button>
+
+                <div class="calc-one__requirement calc-group flex justify-center align-center">
+                  <svg class="icon">
+                    <use xlink:href="#info" />
+                  </svg>
+                  Требования к макетам
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step -->
+          <div class="calc__step calc-two">
+            <div class="calc-text">Укажите тип печати и вариант бумаги.</div>
+
+            <div class="calc-two__body calc-body">
+              <div class="calc-group">
+                <div class="calc-label">Тип печати</div>
+                <div class="calc-two__types">
+                  <!-- Item -->
+                  <div class="calc-two__type calc-option">
+                    <div class="calc-two__type-icon">
+                      <svg class="icon">
+                        <use xlink:href="#printing-machine-device-variant" />
+                      </svg>
+                    </div>
+                    <div class="calc-two__type-text">Цифровая печать</div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="calc-two__type calc-option">
+                    <div class="calc-two__type-icon">
+                      <svg class="icon">
+                        <use xlink:href="#rolling-machine
+                        " />
+                      </svg>
+                    </div>
+                    <div class="calc-two__type-text">Офсетная печать</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <div class="calc-label">Бумага</div>
+                <div class="calc-two__papers">
+                  <div class="calc-two__paper calc-option">Мел ГЛ 90</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 115</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 130</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 150</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 170</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 90</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 115</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 130</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 150</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 170</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 90</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 115</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 130</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 150</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 170</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 90</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 115</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 130</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 150</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 170</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 90</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 115</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 130</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 150</div>
+                  <div class="calc-two__paper calc-option">Мел ГЛ 170</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step -->
+          <div class="calc__step calc-three">
+            <div class="calc-text">Укажите покрытие для вашего бумажного изделия.</div>
+
+            <div class="calc-three__body calc-body">
+              <div class="calc-label">Тип печати</div>
+              <div class="calc-three__covers">
+                <div class="calc-option">Лак</div>
+                <div class="calc-option">Лак ГЛ 115</div>
+                <div class="calc-option">Ламинат</div>
+                <div class="calc-option">Гибрид</div>
+                <div class="calc-option">МАТ Лам</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step -->
+          <div class="calc__step calc-four">
+            <div class="calc-text">Укажите формулу печати для лицевой и оборотной сторон.</div>
+
+            <div class="calc-four__body calc-body">
+              <div class="calc-group">
+                <div class="calc-label">Лицевая сторона</div>
+                <div class="calc-four__colors">
+                  <div class="calc-option">Silver</div>
+                  <div class="calc-option">White</div>
+                  <div class="calc-option">Мел ГЛ 130</div>
+                  <div class="calc-option">CMYK</div>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <div class="calc-label">Оборот</div>
+                <div class="calc-four__colors">
+                  <div class="calc-option">Silver</div>
+                  <div class="calc-option">White</div>
+                  <div class="calc-option">Мел ГЛ 130</div>
+                  <div class="calc-option">CMYK</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step -->
+          <div class="calc__step calc-five">
+            <div class="calc-text">Если желаете добавить долонительные опции, укажите их ниже.</div>
+
+            <div class="calc-five__body calc-body">
+              <div class="calc-five__group">
+                <label class="calc-label">Скругление углов 5 мм</label>
+                <div class="select calc-five__select">
+                  <select class="select__original text-center">
+                    <option value="0">1 угол</option>
+                    <option value="1">Option 2</option>
+                    <option value="2">Option 3</option>
+                    <option value="3">Option 4</option>
+                    <option value="4">Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="calc-five__group">
+                <label class="calc-label">Сверление 5 мм</label>
+                <div class="select calc-five__select">
+                  <select class="select__original text-center">
+                    <option value="0">2 отверстия</option>
+                    <option value="1">Option 2</option>
+                    <option value="2">Option 3</option>
+                    <option value="3">Option 4</option>
+                    <option value="4">Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="calc-five__group">
+                <label class="calc-label">Сгиб (фальцовка)</label>
+                <div class="select calc-five__select">
+                  <select class="select__original text-center">
+                    <option value="0">1 сгиб пополам</option>
+                    <option value="1">Option 2</option>
+                    <option value="2">Option 3</option>
+                    <option value="3">Option 4</option>
+                    <option value="4">Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="calc-five__group">
+                <label class="calc-label">Биговка</label>
+                <div class="select calc-five__select">
+                  <select class="select__original text-center">
+                    <option value="0">Нет</option>
+                    <option value="1">Option 2</option>
+                    <option value="2">Option 3</option>
+                    <option value="3">Option 4</option>
+                    <option value="4">Option 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="calc-five__group">
+                <label class="calc-label">Перфорация</label>
+                <div class="select calc-five__select">
+                  <select class="select__original text-center">
+                    <option value="0">2 линии</option>
+                    <option value="1">Option 2</option>
+                    <option value="2">Option 3</option>
+                    <option value="3">Option 4</option>
+                    <option value="4">Option 5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step -->
+          <div class="calc__step calc-six">
+            <div class="calc-text">Для получения результатов укажите желаемый тирах.</div>
+
+            <div class="calc-six__body calc-body">
+              <div class="calc-group">
+                <div class="calc-label">Тираж</div>
+
+                <div class="calc-six__range">
+                  <div class="calc-six__range-min">50</div>
+                  <div class="calc-six__range-max">5,000</div>
+                  <div class="calc-six__range-value"></div>
+
+                  <div class="range-slider">
+                    <input type="range" min="50" max="5000" value="500" step='50' class="range-slider__input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <div class="calc-label">Стоимость</div>
+                <div class="calc-six__price">
+                  <div class="calc-six__price-value">1,250</div>
+                  <div class="calc-six__price-currency">грн.</div>
+                </div>
+              </div>
+
+              <div class="calc-six__summary row-flex">
+                <div class="calc-six__summary-item col">
+                  <div class="calc-label calc-six__summary-label">Продукция</div>
+                  <div class="calc-six__summary-value">Глянцевая 115 г.</div>
+                </div>
+
+                <div class="calc-six__summary-item col">
+                  <div class="calc-label calc-six__summary-label">Сроки</div>
+                  <div class="calc-six__summary-value">3 дня</div>
+                </div>
+
+                <div class="calc-six__summary-item col">
+                  <div class="calc-label calc-six__summary-label">Стороны</div>
+                  <div class="calc-six__summary-value">4 + 4</div>
+                </div>
+              </div>
+
+              <div class="calc-six__buttons">
+                <div class="calc-six__btn-group">
+                  <button class="btn btn-blue calc-six__btn w-100">Оплатить</button>
+                </div>
+
+                <div class="calc-six__btn-group">
+                  <button class="btn btn-black calc-six__btn w-100">
+                    <svg class="icon">
+                      <use xlink:href="#apple" />
+                    </svg>
+                    Apple Pay
+                  </button>
+                </div>
+
+                <div class="calc-six__btn-group">
+                  <button class="btn btn-gray calc-six__btn w-100">Получить счёт *</button>
+                  <div class="calc-six__btn-caption">* — Получить счёт могут только юридические лица.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow nav -->
+          <div class="calc-move flex align-center justify-between">
+            <!-- Button prev -->
+            <button class="btn calc-move__prev calc-move__item flex align-center disable">
+              <svg class="icon">
+                <use xlink:href="#right-chevron" />
+              </svg>
+              Назад
+            </button>
+
+            <!-- Button next -->
+            <button class="btn calc-move__next calc-move__item flex align-center">
+              Далее
+              <svg class="icon">
+                <use xlink:href="#right-chevron" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
