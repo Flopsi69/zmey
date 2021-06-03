@@ -175,14 +175,17 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "../node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "../node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+
  // Sliders
 
-$('.clients__slider').slick({
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.clients__slider').slick({
   slidesToShow: 5,
-  prevArrow: $('.clients__nav-prev'),
-  nextArrow: $('.clients__nav-next'),
+  prevArrow: jquery__WEBPACK_IMPORTED_MODULE_1___default()('.clients__nav-prev'),
+  nextArrow: jquery__WEBPACK_IMPORTED_MODULE_1___default()('.clients__nav-next'),
   infinite: true,
   responsive: [{
     breakpoint: 992,
@@ -197,19 +200,19 @@ $('.clients__slider').slick({
     }
   }]
 });
-$('.pl-banner').slick({
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.pl-banner').slick({
   arrows: false,
   dots: true,
   dotsClass: 'pl-banner__dots'
 });
-$('.pdp__gallery-for').slick({
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.pdp__gallery-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
   asNavFor: '.pdp__gallery-nav'
 });
-$('.pdp__gallery-nav').slick({
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.pdp__gallery-nav').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.pdp__gallery-for',
@@ -219,85 +222,206 @@ $('.pdp__gallery-nav').slick({
   focusOnSelect: true
 }); // Events
 
-$('.nav__item-dropdown').on('click', function (e) {
-  if ($(window).width() < 992) {
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav__item-dropdown').on('click', function (e) {
+  if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(window).width() < 992) {
     e.preventDefault();
-    $(this).toggleClass('active').find('.nav__dropdown').slideToggle();
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).toggleClass('active').find('.nav__dropdown').slideToggle();
   }
 });
-$('.calc__nav-item').on('click', function () {
-  $('.calc__nav-item.active').removeClass('active');
-  $(this).addClass('active');
-
-  if ($('.calc__nav-item.active').prev().length) {
-    $('.calc-move__prev.disable').removeClass('disable');
-  } else {
-    $('.calc-move__prev').addClass('disable');
-  }
-
-  if ($('.calc__nav-item.active').next().length) {
-    $('.calc-move__next.disable').removeClass('disable');
-  } else {
-    $('.calc-move__next').addClass('disable');
-  }
-});
-$('.calc-option').on('click', function (e) {
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.calc-option', function (e) {
   e.preventDefault();
-  $(this).addClass('active').siblings('.active').removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('active').siblings('.active').removeClass('active');
+  calcPrice();
 });
-$('.calc-move__item').on('click', function () {
-  if (!$(this).hasClass('disable')) {
-    if ($(this).hasClass('calc-move__prev') && $('.calc__nav-item.active').prev().length) {
-      $('.calc__nav-item.active').removeClass('active').prev().addClass('active');
-    } else if ($(this).hasClass('calc-move__next') && $('.calc__nav-item.active').next().length) {
-      $('.calc__nav-item.active').removeClass('active').next().addClass('active');
-    }
-
-    if ($('.calc__nav-item.active').prev().length) {
-      $('.calc-move__prev.disable').removeClass('disable');
-    } else {
-      $('.calc-move__prev').addClass('disable');
-    }
-
-    if ($('.calc__nav-item.active').next().length) {
-      $('.calc-move__next.disable').removeClass('disable');
-    } else {
-      $('.calc-move__next').addClass('disable');
-    }
-  }
-});
-$('.sidebar-cats__toggler').on('click', function (e) {
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.sidebar-cats__toggler').on('click', function (e) {
   e.preventDefault();
-  $(this).siblings('.sidebar-cats__nav').slideToggle();
-  $(this).toggleClass('sidebar-cats__toggler_collapse');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).siblings('.sidebar-cats__nav').slideToggle();
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).toggleClass('sidebar-cats__toggler_collapse');
 });
-$('.pdp__tabs-toggler').on('click', function (e) {
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.pdp__tabs-toggler').on('click', function (e) {
   e.preventDefault();
-  $(this).addClass('active').siblings('.active').removeClass('active');
-  $('.pdp__tab.active').slideToggle(function () {
-    $(this).removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).addClass('active').siblings('.active').removeClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.pdp__tab.active').slideToggle(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).removeClass('active');
   }).siblings().slideToggle().addClass('active');
 });
-$('.burger').on('click', toggleMobileNav);
-$('.burger-overlay').on('click', toggleMobileNav);
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.burger').on('click', toggleMobileNav);
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.burger-overlay').on('click', toggleMobileNav);
 
 function toggleMobileNav(e) {
   e.preventDefault();
-  $('body').toggleClass('overflow-hide');
-  $('.burger').toggleClass('active');
-  $('.burger-overlay').toggleClass('active');
-  $('.nav').toggleClass('nav_open');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('body').toggleClass('overflow-hide');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.burger').toggleClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.burger-overlay').toggleClass('active');
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.nav').toggleClass('nav_open');
 } // Range
 
 
-$('.calc-six__range-value').text($('.range-slider__input').val()); // Range
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-six__range-value').text(jquery__WEBPACK_IMPORTED_MODULE_1___default()('.range-slider__input').val()); // Range
 
-$('.calc-six__range-value').text($('.range-slider__input').val()); // Update the current slider value (each time you drag the slider handle)
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-six__range-value').text(jquery__WEBPACK_IMPORTED_MODULE_1___default()('.range-slider__input').val()); // Update the current slider value (each time you drag the slider handle)
 
-$('.range-slider__input').on('input', function () {
-  $('.calc-six__range-value').text($(this).val());
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('.range-slider__input').on('input', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-six__range-value').text(jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).val());
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.calc-one .select__item', function () {
+  var temp = jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-one select').val();
+  var tempName = jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text();
+
+  if (temp) {
+    fetch(location.href + '?templateId=' + temp).then(function (response) {
+      return response.text();
+    }).then(function (data) {
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(data, 'text/html');
+      document.querySelector('.calc__info').remove();
+      document.querySelector('.calc__nav').insertAdjacentElement('afterend', doc.querySelector('.calc__info'));
+      initSelects();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-select__size .select__value').text(tempName);
+      moveStep('next');
+    });
+  }
+});
+
+if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc').length && location.hash.includes('step')) {
+  var step = parseInt(location.hash.match(/\d/)[0]);
+
+  if (step && step <= jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item').length) {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').removeClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item:nth-child(' + step + ')').addClass('active');
+    console.log('a.active ~ *');
+
+    for (var i = 1; i < step; i++) {
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item:nth-child(' + i + ')').addClass('pass');
+    }
+
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step.active').removeClass('active').hide();
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step:nth-child(' + step + ')').addClass('active').show();
+  }
+}
+
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.calc-move__next', function (e) {
+  e.preventDefault();
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step.active .calc-option').length) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step.active .calc-option.active').length) {
+      moveStep('next');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step.active .calc-text').addClass('calc-text_error');
+    }
+  } else {
+    moveStep('next');
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.calc-move__prev', function (e) {
+  e.preventDefault();
+  moveStep('prev');
+});
+
+function moveStep(to) {
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-text_error').removeClass('calc-text_error');
+  console.log('movestep', to);
+
+  if (to == 'next') {
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').next().length) {
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step.active').slideToggle().removeClass('active').next().slideToggle().addClass('active');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-move__prev.disable').removeClass('disable');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').removeClass('active').addClass('pass').next().addClass('active');
+
+      if (!jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').next().length) {
+        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-move__next').addClass('disable');
+      }
+    }
+  } else if (to == 'prev') {
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').prev().length) {
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__step.active').slideToggle().removeClass('active').prev().slideToggle().addClass('active');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-move__next.disable').removeClass('disable');
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').removeClass('active').prev().addClass('active').removeClass('pass');
+
+      if (!jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc__nav-item.active').prev().length) {
+        jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-move__prev').addClass('disable');
+      }
+    }
+  } // $('.calc-move__item').on('click', function () {
+  //   if (!$(this).hasClass('disable')) {
+  //     if (
+  //       $(this).hasClass('calc-move__prev') &&
+  //       $('.calc__nav-item.active').prev().length
+  //     ) {
+  //       $('.calc__nav-item.active')
+  //         .removeClass('active')
+  //         .prev()
+  //         .addClass('active');
+  //     } else if (
+  //       $(this).hasClass('calc-move__next') &&
+  //       $('.calc__nav-item.active').next().length
+  //     ) {
+  //       $('.calc__nav-item.active')
+  //         .removeClass('active')
+  //         .next()
+  //         .addClass('active');
+  //     }
+  //     if ($('.calc__nav-item.active').prev().length) {
+  //       $('.calc-move__prev.disable').removeClass('disable');
+  //     } else {
+  //       $('.calc-move__prev').addClass('disable');
+  //     }
+  //     if ($('.calc__nav-item.active').next().length) {
+  //       $('.calc-move__next.disable').removeClass('disable');
+  //     } else {
+  //       $('.calc-move__next').addClass('disable');
+  //     }
+  //   }
+  // });
+
+}
+
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('click', '.calc-five__select .select__item', function () {
+  calcPrice();
+});
+jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).on('input', '.range-slider__input', function () {
+  console.log(jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).val());
+  calcPrice();
+});
+
+function calcPrice() {
+  var price = 0;
+  var coef = 1;
+  var singlePrice = 0;
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-option.active').each(function (i, el) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('price')) {
+      price += jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('price');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('coef')) {
+      coef *= jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('coef');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('single-price')) {
+      singlePrice += jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('single-price');
+    }
+
+    console.log('coefbefore', jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).data('coef'));
+    console.log('coef', coef);
+  });
+  console.log('A', price, coef);
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-five__select').each(function (i, el) {
+    price += parseFloat(jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).find('select').val());
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).find('select')[0].selectedOptions[0]).data('coef')) {
+      coef *= jquery__WEBPACK_IMPORTED_MODULE_1___default()(jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).find('select')[0].selectedOptions[0]).data('coef');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).find('select')[0].selectedOptions[0]).data('single-price')) {
+      singlePrice += jquery__WEBPACK_IMPORTED_MODULE_1___default()(jquery__WEBPACK_IMPORTED_MODULE_1___default()(el).find('select')[0].selectedOptions[0]).data('single-price');
+    }
+  });
+  console.log('B', price, coef);
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-six__price-value').text(parseInt(price * coef * parseInt(jquery__WEBPACK_IMPORTED_MODULE_1___default()('.range-slider__input').val()) + singlePrice));
+  jquery__WEBPACK_IMPORTED_MODULE_1___default()('.calc-six__range-value').text(parseInt(jquery__WEBPACK_IMPORTED_MODULE_1___default()('.range-slider__input').val()));
+} // $('.calc-one .select__items').on('click', function (e) {
+//   console.log($('.calc-one select').val());
+// });
 
 /***/ }),
 
@@ -308,72 +432,76 @@ $('.range-slider__input').on('input', function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var x, i, j, l, ll, selElmnt, a, b, c;
-/* Look for any elements with the class "select": */
+window.initSelects = function () {
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /* Look for any elements with the class "select": */
 
-x = document.getElementsByClassName("select");
-l = x.length;
+  x = document.getElementsByClassName('select');
+  l = x.length;
 
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /* For each element, create a new DIV that will act as the selected item: */
+  for (i = 0; i < l; i++) {
+    selElmnt = x[i].getElementsByTagName('select')[0];
+    ll = selElmnt.length;
+    /* For each element, create a new DIV that will act as the selected item: */
 
-  a = document.createElement("DIV");
-  a.classList.add("select__value");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /* For each element, create a new DIV that will contain the option list: */
+    a = document.createElement('DIV');
+    a.classList.add('select__value');
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    x[i].appendChild(a);
+    /* For each element, create a new DIV that will contain the option list: */
 
-  b = document.createElement("DIV");
-  b.classList.add("select__items");
-  b.classList.add("select__items_hide");
+    b = document.createElement('DIV');
+    b.classList.add('select__items');
+    b.classList.add('select__items_hide');
 
-  for (j = 1; j < ll; j++) {
-    /* For each option in the original select element,
-    create a new DIV that will act as an option item: */
-    c = document.createElement("DIV");
-    c.classList.add("select__item");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function (e) {
-      /* When an item is clicked, update the original select box,
-      and the selected item: */
-      var y, i, k, s, h, sl, yl;
-      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-      sl = s.length;
-      h = this.parentNode.previousSibling;
+    for (j = 0; j < ll; j++) {
+      /* For each option in the original select element,
+      create a new DIV that will act as an option item: */
+      c = document.createElement('DIV');
+      c.classList.add('select__item');
+      c.innerHTML = selElmnt.options[j].innerHTML;
+      c.addEventListener('click', function (e) {
+        /* When an item is clicked, update the original select box,
+          and the selected item: */
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName('select')[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
 
-      for (i = 0; i < sl; i++) {
-        if (s.options[i].innerHTML == this.innerHTML) {
-          s.selectedIndex = i;
-          h.innerHTML = this.innerHTML;
-          y = this.parentNode.getElementsByClassName("select__item_selected");
-          yl = y.length;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName('select__item_selected');
+            yl = y.length;
 
-          for (k = 0; k < yl; k++) {
-            y[k].classList.remove("select__item_selected");
+            for (k = 0; k < yl; k++) {
+              y[k].classList.remove('select__item_selected');
+            }
+
+            this.classList.add('select__item_selected');
+            break;
           }
-
-          this.classList.add("select__item_selected");
-          break;
         }
-      }
 
-      h.click();
+        h.click();
+      });
+      b.appendChild(c);
+    }
+
+    x[i].appendChild(b);
+    a.addEventListener('click', function (e) {
+      /* When the select box is clicked, close any other select boxes,
+      and open/close the current select box: */
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle('select__items_hide');
+      this.classList.toggle('select__value_active');
     });
-    b.appendChild(c);
   }
+};
 
-  x[i].appendChild(b);
-  a.addEventListener("click", function (e) {
-    /* When the select box is clicked, close any other select boxes,
-    and open/close the current select box: */
-    e.stopPropagation();
-    closeAllSelect(this);
-    this.nextSibling.classList.toggle("select__items_hide");
-    this.classList.toggle("select__value_active");
-  });
-}
+initSelects();
 
 function closeAllSelect(elmnt) {
   /* A function that will close all select boxes in the document,
@@ -384,8 +512,8 @@ function closeAllSelect(elmnt) {
       xl,
       yl,
       arrNo = [];
-  x = document.getElementsByClassName("select__items");
-  y = document.getElementsByClassName("select__value");
+  x = document.getElementsByClassName('select__items');
+  y = document.getElementsByClassName('select__value');
   xl = x.length;
   yl = y.length;
 
@@ -393,13 +521,13 @@ function closeAllSelect(elmnt) {
     if (elmnt == y[i]) {
       arrNo.push(i);
     } else {
-      y[i].classList.remove("select__value_active");
+      y[i].classList.remove('select__value_active');
     }
   }
 
   for (i = 0; i < xl; i++) {
     if (arrNo.indexOf(i)) {
-      x[i].classList.add("select__items_hide");
+      x[i].classList.add('select__items_hide');
     }
   }
 }
@@ -407,7 +535,7 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 
 
-document.addEventListener("click", closeAllSelect);
+document.addEventListener('click', closeAllSelect);
 
 /***/ }),
 
@@ -437,27 +565,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
+/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
 /* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/select */ "./src/js/components/select.js");
 /* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_select__WEBPACK_IMPORTED_MODULE_1__);
 
 
-$('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.slider-for',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ })
 

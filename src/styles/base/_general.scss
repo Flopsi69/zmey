@@ -1295,11 +1295,25 @@ textarea {
   &__items {
     position: absolute;
     background-color: #fbfbfb;
+    max-height: 55vh;
+    overflow: auto;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
     border: 1px solid #e7e5e5;
+    &::-webkit-scrollbar {
+      width: 0.5em;
+    }
+    
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
     &_hide {
       display: none;
     }
@@ -1937,9 +1951,17 @@ textarea {
         }
       }
       table {
-        border: 1px solid $dark;
+        // border-collapse: collapse;
+        font-size: 15px;
+
         td {
           padding: 8px 15px;
+          height: 42px;
+          background-color: #f2f2f2;
+          &:first-child {
+            font-weight: bold;
+          }
+          // border: 1px solid #bcbfc1
         }
       }
     }
@@ -2276,11 +2298,15 @@ textarea {
 
 .calc {
   &__step {
-    // display: none;
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
     & + & {
-      margin-top: 55px;
-      padding-top: 55px;
-      border-top: 1px solid $blue;
+      // margin-top: 55px;
+      // padding-top: 55px;
+      // border-top: 1px solid $blue;
     }
     &.active {
       display: block;
@@ -2330,6 +2356,10 @@ textarea {
   &-text {
     color: rgba($dark,0.75);
     line-height: 1.4;
+    transition: 0.35s;
+    &_error {
+      color: red;
+    }
   }
   &__title {
     margin-bottom: 25px;
@@ -2343,7 +2373,6 @@ textarea {
       margin-bottom: 50px;
     }
     &-item {
-      cursor: pointer;
       position: relative;
       background-color: #fbfbfb;
       display: flex;
@@ -2353,6 +2382,11 @@ textarea {
         color: #fff;
         background-color: $dark;
       }
+      &.pass {
+        color: #fff;
+        background-color: $dark;
+        opacity: 0.4;
+      }
     }
     &-icon {
       margin-right: 14px;
@@ -2361,7 +2395,7 @@ textarea {
         width: 35px;
         height: 35px;
         fill: rgba($dark, 0.25);
-        .active & {
+        .active &, .pass & {
           fill: #fff;
         }
       }
@@ -2426,7 +2460,9 @@ textarea {
       padding: 14px 25px;
     }
     &__body {
-      display: block;
+      @include sm-block {
+        display: block;
+      }
     }
     &__requirement {
       color: $blue;
@@ -2620,6 +2656,9 @@ textarea {
       }
     }
     &__next {
+      &.disable {
+        opacity: 0;
+      }
       svg {
         margin-right: 0;
         margin-left: 7px;
